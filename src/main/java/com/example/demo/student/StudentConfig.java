@@ -18,8 +18,8 @@ public class StudentConfig {
                 Student mariam = new Student(
                         1L,
                         "mariam",
-                        "olisaejikeme@gmail.com",
-                        LocalDate.of(2001, Month.DECEMBER, 6),
+                        "mariam@gmail.com",
+                        LocalDate.of(2001, Month.DECEMBER, 06),
                         21
                 );
 

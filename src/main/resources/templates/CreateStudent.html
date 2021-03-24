@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://wwwthymleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <title>Create Student</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+        <form action="#" th:action="@{/page/add-student}" th:object="${student}"  method="post">
+            <label for="name">Name</label> <input type="text" th:field="*{name}"  class="form-control" id="name" placeholder="Name">
+            <label for="email">Email</label> <input type="text" th:field="*{email}" class="form-control" id="email" placeholder="Email">
+            <label for="age" >Age</label> <input type="number" th:field="*{age}" class="form-control" id="age" placeholder="Age">
+            <label for="dob" >DOB</label> <input type="date" th:field="*{dob}" class="form-control" id="dob" placeholder="Date of Birth">
+            <input type="submit" value="Create Student">
+        </form>
+</body>
+</html>
